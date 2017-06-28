@@ -8,11 +8,33 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header class="container">
+	<header>
 		<div class="row">
-			<h3>To do App</h3>
+			<div class="col offset-s2 s8">
+				<h3>To do App</h3>
+			</div>
 		</div>
-	</header>
+	</header>	
+	<section class="container">	
+		<div class="row">
+			<div class="col offset-s2 s8">
+				<form action="">
+					<input type="text" id="nombre" placeholder="Ingresa la tarea">
+					<button>Add</button>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col offset-s2 s8">
+				<div id="items"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col offset-s2 s8">
+				<div id="cItems"></div>
+			</div>
+		</div>
+	</section>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	 <!-- Compiled and minified JavaScript -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
