@@ -12,15 +12,20 @@ $(document).ready(function(){
 	$("#tarea").enterKey(function(e){
     	$(this).trigger('enterEvent');
   		e.preventDefault();
-		var task=$("#tarea").val();
+		localStorage.task=document.getElementById("tarea").value;;
 		var lastSibling = $('#todo-list > .todo-wrap:last-of-type > input').attr('id');
   		var newId = Number(lastSibling) + 1;
-		if(task == ""){
+		if(localStorage.task == ""){
 			alert("Debes anotar una tarea");
 		}else{
-			$("#items").append('<div><span class="editing todo-wrap"><input type="checkbox" id="'+newId+'"/><label for="'+newId+'" class="todo">' + task + '</label><span class="delete-item" title="remove"><button>x</button></span></span></div>');
+			$("#items").append('<div><span class="editing todo-wrap"><input type="checkbox" id="'+newId+'"/><label for="'+newId+'" class="todo">' + localStorage.task + '</label><span class="delete-item" title="remove"><button>x</button></span></span></div>');
 
 		}
+	});
+	var codes={"1":"#cItems"};
+	$('.delete-item').click(function(){
+	  var parentItem = $(this).parent();
+	  $(parentItem).remove(); 
 	});
 })
 
