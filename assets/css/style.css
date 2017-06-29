@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body{
 	background-image: url(../img/hexagonal-pattern_1051-833.jpg); 
 	color: whitesmoke;
@@ -5,18 +10,49 @@ body{
 
 header{
 	padding: 2% 0;
-	background-color: rgba(187, 212, 208, 0.8);
-	
+	background-color: rgb(255, 196, 184);
+
+}
+
+h3{
+	color: whitesmoke;
+	font-weight: bold;
+}
+form{
+	margin-top: 40px;
+}
+
+section{
+	background-color: rgba(255, 255, 255, 0.6);
+	height: 70vh; 
+}
+
+.fa{
+	color: #045FB4;
+	margin-left: 10px;
+	font-size: 30px;
+
+}
+
+input{
+	color: #848484;
+}
+
+h5{
+	color: #8904B1;
 }
 
 button{
 	background-color: rgb(150, 208, 212);
 }
 
-label, span, p{
+[type="checkbox"]+label{
+	font-family: 'Pacifico', cursive;
+	color: #585858;
+	font-size: 20px;
+}
+
+span, p{
 	color: black;
 }
 
-span{
-	display:block;
-}
