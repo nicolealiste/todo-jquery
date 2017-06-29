@@ -18,13 +18,18 @@ $(document).ready(function(){
 		if(localStorage.task == ""){
 			alert("Debes anotar una tarea");
 		}else{
-			$("#items").append('<div><span class="editing todo-wrap"><input type="checkbox" id="'+newId+'"/><label for="'+newId+'" class="todo">' + localStorage.task + '</label><span class="delete-item" title="remove"><button>x</button></span></span></div>');
+			$("#items").append('<div><input type="checkbox" id="'+newId+'"/><label for="'+newId+'" class="todo">' + localStorage.task + '</label><span class="delete-item" title="remove"><button>x</button></span></div>');
 			$("#tarea").val("");
 		};
 		$('.delete-item').click(function(){
 		  var parentItem = $(this).parent();
 		  $(parentItem).remove(); 
 		});
+		$ ("input").click(function(){
+		var pItem = $(this).parent("div");
+		$("#cItems").append(pItem);
+		});
+		
 	});
 	$("#1").click(function(e){
 		e.preventDefault();
