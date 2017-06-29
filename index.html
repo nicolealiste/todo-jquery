@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>To do</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -24,19 +24,33 @@
 				</form>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col offset-s2 s8">
-				<h5>To do Items: </h5>
-				<div id="items"></div>
+		<form id="todo-list">
+			<div class="row">
+				<div class="col offset-s2 s8">
+					<h5>To do Items: </h5>
+						<span class="todo-wrap">
+						    <input type="checkbox" id="1" checked/>
+						    <label for="1" class="todo">
+						      <i class="fa fa-check"></i>
+						      Have a good idea
+						    </label>
+						    <span class="delete-item" title="remove">
+						      <i class="fa fa-times-circle"></i>
+						    </span>
+					  	</span>
+					<div id="items"></div>
+				</div>
 			</div>
-		</div>
+		</form>	
 		<hr>
-		<div class="row">
-			<div class="col offset-s2 s8">
-				<h5>Complete Items: </h5>
-				<div id="cItems"></div>
+		<form>
+			<div class="row">
+				<div class="col offset-s2 s8">
+					<h5>Complete Items: </h5>
+					<div id="cItems"></div>
+				</div>
 			</div>
-		</div>
+		</form>	
 	</section>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	 <!-- Compiled and minified JavaScript -->
