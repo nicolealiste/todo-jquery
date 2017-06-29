@@ -1,0 +1,22 @@
+body{
+	background-image: url(../img/hexagonal-pattern_1051-833.jpg); 
+	color: whitesmoke;
+}
+
+header{
+	padding: 2% 0;
+	background-color: rgba(187, 212, 208, 0.8);
+	
+}
+
+button{
+	background-color: rgb(150, 208, 212);
+}
+
+label, span, p{
+	color: black;
+}
+
+span{
+	display:block;
+}
